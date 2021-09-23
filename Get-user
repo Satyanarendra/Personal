@@ -1,3 +1,7 @@
+$usercredentails = Get-Credential
+
+Connect-ExchangeOnline -Credential $usercredentails
+
 #To get the complete user info
 
 # Get-User -Identity <User mail ID> 
