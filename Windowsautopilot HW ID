@@ -1,0 +1,9 @@
+New-Item -ItemType directory -Path "C:\satya"
+
+Set-Location "C:\satya"
+
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+
+Install-Script -Name Get-windowsAutopilotinfo 
+
+Get-WindowsAutoPilotInfo.ps1 -OutputFile satya.csv
